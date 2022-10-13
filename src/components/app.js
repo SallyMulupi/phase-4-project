@@ -22,3 +22,8 @@ function App() {
         setNotes([newNote, ...notes]);
         setActiveNote(newNote.id);
       };
+
+      const onDeleteNote = (noteId) => {
+        setNotes(notes.filter(({ id }) => id !== noteId));
+      };
+    
