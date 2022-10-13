@@ -26,4 +26,10 @@ function App() {
       const onDeleteNote = (noteId) => {
         setNotes(notes.filter(({ id }) => id !== noteId));
       };
+      const onUpdateNote = (updatedNote) => {
+        const updatedNotesArr = notes.map((note) => {
+          if (note.id === updatedNote.id) {
+            return updatedNote;
+          }
+    
     
