@@ -24,5 +24,9 @@ button {
     font-size: inherit;
     font-family: inherit;
     cursor: pointer;
-    color: #08c;
+    color: #0088cc;
+}
+
+button:hover {
+    color: #04c;
 }
